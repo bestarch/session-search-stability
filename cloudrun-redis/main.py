@@ -3,7 +3,7 @@ import pymysql
 from app import app
 from db_config import mysql
 from flask import flash, session, render_template, request, redirect, url_for
-from werkzeug.security import generate_password_hash, check_password_hash
+#from werkzeug.security import generate_password_hash, check_password_hash
 
 
 @app.template_filter()
