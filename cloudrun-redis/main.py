@@ -85,7 +85,9 @@ def products():
     search_param = request.args.get("search_param")
     qry = "*"
     if search_param:
-        qry = f"@name:{search_param}*" + " | @brand:{"+search_param+"}"
+        qry = f"@name:*{search_param}*" + " | @brand:{"+search_param+"}"
+    else:
+        search_param = ''
 
     print("Generated query string: " + qry)
     query = (Query(qry).paging(0, 100))
@@ -98,7 +100,7 @@ def products():
     for doc in docs:
         result.append(json.loads(doc.json))
 
-    return render_template('products.html', products=result)
+    return render_template('products.html', products=result, search_param=search_param)
 
 
 @app.route('/empty')
