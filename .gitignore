@@ -4,3 +4,6 @@
 /cloudrun-redis/.idea
 cloudrun-redis/__pycache__/app.cpython-311.pyc
 cloudrun-redis/__pycache__/db_config.cpython-311.pyc
+cloudrun-redis/__pycache__/connection.cpython-311.pyc
+cloudrun-redis/__pycache__/generator.cpython-311.pyc
+cloudrun-redis/__pycache__/main.cpython-311.pyc
