@@ -76,13 +76,13 @@
 
     <body>
         <header>
-            <div class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm" style="background-color:#485a93">
+            <div class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm" style="background-color:#FF4438">
                 <div class="container">
                     <a href="#" class="navbar-brand d-flex align-items-center">
                         <strong>ABC Store</strong>
                     </a>
                     <div class="d-flex align-items-center">
-                        <span class="text-info me-3">{{ gcp_region }}</span>
+                        <span class=" me-3">{{ region }}</span>
 
                         {% if 'cart_item' in session and session['cart_item']|length > 0 %}
                             <ul class="navbar-nav me-auto my-2 my-lg-0">
@@ -145,7 +145,7 @@
                 <div class="row py-lg-4">
                     <h1 class="fw-light">ABC Store</h1>
                     <p class="lead text-muted">
-                        This sample storefront demonstrates how to use
+                        This sample storefront demonstrates how to use Search & Querying capability with
                         Active-Active to enable local read and write
                         latencies wherever you are!
                     </p>

@@ -100,7 +100,7 @@ def products():
     for doc in docs:
         result.append(json.loads(doc.json))
 
-    return render_template('products.html', products=result, search_param=search_param)
+    return render_template('products.html', products=result, search_param=search_param, region=region)
 
 
 @app.route('/empty')
@@ -170,7 +170,7 @@ def createIndexes():
         logging.error("Exception occurred while creating indexes")
 
 if __name__ == "__main__":
-    gcp_region = os.getenv('GCPREGION', "LOCAL")
+    region = os.getenv('REGION', "LOCAL")
     conn = RedisConnection().get_connection()
     createIndexes()
     load_data(conn)
