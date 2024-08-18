@@ -7,16 +7,16 @@ from redis.exceptions import RedisError
 class RedisConnection:
     def __init__(self):
         try:
-            password = os.getenv('PASSWORD')
+            password = os.getenv('REDISPASSWORD')
             if not (password and password.strip()):
                 self.client = redis.Redis(
-                    host=os.getenv('HOST', "localhost"),
-                    port=os.getenv('PORT', 6379),
+                    host=os.getenv('REDISHOST', "localhost"),
+                    port=os.getenv('REDISPORT', 6379),
                     decode_responses=True)
             else:
                 self.client = redis.Redis(
-                    host=os.getenv('HOST', "localhost"),
-                    port=os.getenv('PORT', 6379),
+                    host=os.getenv('REDISHOST', "localhost"),
+                    port=os.getenv('REDISPORT', 6379),
                     password=password,
                     decode_responses=True)
             self.client.ping()
