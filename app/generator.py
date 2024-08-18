@@ -1,8 +1,5 @@
 import random
 import string
-import json
-import redis
-import os
 import pandas as pd
 from connection import RedisConnection
 
@@ -10,7 +7,6 @@ from connection import RedisConnection
 def load_data():
     conn = RedisConnection().get_connection()
     data = pd.read_csv("data.csv")
-    pipeline = conn.pipeline()
     for i, row in data.iterrows():
         pid = f"ID{i + 1:04d}"
         product = {
@@ -23,9 +19,7 @@ def load_data():
             "image": row['image'],
             "description": row['description']
         }
-        pipeline.json().set(f"product:{pid}", "$", product)
+        conn.json().set(f"product:{pid}", "$", product)
 
-    pipeline.execute()
-    pipeline.close()
     conn.close()
 
