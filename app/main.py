@@ -28,6 +28,7 @@ def add_product_to_cart():
             qry = f"@sku:{_code}"
             print("Generated query string: " + qry)
             query = Query(qry)
+            print(f"Trying to add the product to the cart with Redis status {conn.ping()}")
             docs = conn.ft("idx_product").search(query).docs
             doc = json.loads(docs[0].json)
             itemArray = {
@@ -173,5 +174,5 @@ if __name__ == "__main__":
     region = os.getenv('REGION', "LOCAL")
     conn = RedisConnection().get_connection()
     createIndexes()
-    load_data(conn)
+    load_data()
     app.run(host='0.0.0.0', debug=True, port=5555)

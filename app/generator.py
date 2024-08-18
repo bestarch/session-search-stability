@@ -4,9 +4,11 @@ import json
 import redis
 import os
 import pandas as pd
+from connection import RedisConnection
 
 
-def load_data(conn):
+def load_data():
+    conn = RedisConnection().get_connection()
     data = pd.read_csv("data.csv")
     pipeline = conn.pipeline()
     for i, row in data.iterrows():

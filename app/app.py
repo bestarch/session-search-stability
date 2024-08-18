@@ -8,9 +8,9 @@ app.secret_key = "secret key"
 
 
 # Configure Redis for storing the session data on the server-side
-redishost = os.environ.get("REDISHOST", "localhost")
-redisport = os.environ.get("REDISPORT", "6379")
-redispassword = os.environ.get("REDISPASSWORD", "password")
+redishost = os.environ.get("HOST", "localhost")
+redisport = os.environ.get("PORT", "6379")
+redispassword = os.environ.get("PASSWORD", "admin")
 redis_endpoint = 'redis://:' + redispassword + '@' + redishost + ':' + redisport
 
 app.config['SESSION_TYPE'] = 'redis'
