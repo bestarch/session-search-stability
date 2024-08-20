@@ -16,7 +16,7 @@ import logging
 @app.template_filter()
 def currencyFormat(value):
     value = float(value)
-    return "${:,.2f}".format(value)
+    return "₹{:,.2f}".format(value)
 
 
 @app.route('/add', methods=['POST'])
