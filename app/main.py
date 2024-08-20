@@ -5,6 +5,8 @@ import time
 from redis.commands.search.field import TextField, TagField, NumericField
 from redis.commands.search.indexDefinition import IndexDefinition, IndexType
 from redis.commands.search.query import Query
+import redis.commands.search.aggregation as aggregations
+import redis.commands.search.reducers as reducers
 
 from app import app
 from flask import session, render_template, request, redirect, url_for
@@ -97,11 +99,22 @@ def products():
     time2 = time.time()
     print(f"Product list retrieved in {(time2 - time1):.3f} seconds")
 
+    """
+    Find the product count
+    """
+    req = (aggregations.AggregateRequest(qry)
+           .group_by([], reducers.count().alias('product_count')))
+    res = conn.ft("idx_product").aggregate(req).rows
+
+    product_count = 0
+    if res and len(res):
+        product_count = res[0][1]
+
     result = []
     for doc in docs:
         result.append(json.loads(doc.json))
 
-    return render_template('products.html', products=result, search_param=search_param, region=region)
+    return render_template('products.html', products=result, search_param=search_param, region=region, product_count=int(product_count))
 
 
 @app.route('/empty')

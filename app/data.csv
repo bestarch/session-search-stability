@@ -1,26 +1,26 @@
 name,model,category,brand,price,image,description
-On Cloud X running shoes,xxxx,[Footwear;Shoes;Sports],Cloudx,1500,product-images/shoes.jpg,On Cloud X running shoes
-Apple Macbook Pro 13,xxxx,[Laptop;Mac],Apple,120000,product-images/laptop.jpg,Apple Macbook Pro 13
-Canon EOS D5 MARK IV,xxxx,[Camera;DSLR;SLR],Canon,200000,product-images/camera.jpg,Canon EOS D5 MARK IV
-Apple iPhone Pro 13,xxxx,[Phone;Mobile;iPhone],Apple,90000,product-images/mobile.jpg,Apple iPhone Pro 13
-Rolex Green Submarina,xxxx,[Watch;Premium;Luxury],Rolex,800000,product-images/watch.jpg,Rolex Green Submarina
-Beats Headphone (Black/Red),xxxx,[Headphone;Earphone;Headset],Beats,50000,product-images/headphone.jpg,Beats Headphone (Black/Red)
-Panerai Luminor Ceramica,xxxx,[Watch],Luminor,40000,product-images/pam_watch.png,Panerai Luminor Ceramica
-Frank Muller - Cintree Curvex,xxxx,[Watch;Premium;Luxury],Frank M,500000,product-images/frank_watch.png,Frank Muller - Cintree Curvex
-Google Pixel 6 Pro (512GB),xxxx,[Phone;Mobile;Android],Google,100000,product-images/pixel6pro_mp.png,Google Pixel 6 Pro (512GB)
-Emporio Armani Sneakers,xxxx,[Footwear;Shoes;Sports],Armani,40000,product-images/emporio_shoes.png,Emporio Armani Sneakers
-Asics Gel Venture 8 Running,xxxx,[Footwear;Shoes;Sports],Asics,1500,product-images/asics_shoes.png,Asics Gel Venture 8 Running
-Beats Studio Buds (RED),xxxx,[Headphone;Earphone;Headset],Beats,5500,product-images/beats_hs.jpg,Beats Studio Buds (RED)
-Fujifilm SLR,xxxx,[Camera;DSLR;SLR],Fujifilm,100000,product-images/camera2.jpg,Fujifilm SLR
-Watch for her,xxxx,[Watch;Premium;Luxury],DKNY,100000,product-images/watch2.jpg,Watch for her
-Women's Handbag,xxxx,[Handbag;Clutch],Lino Perros,100000,product-images/handbag2.jpg,Women's Handbag 
-Shirt slim fit,xxxx,[Apparel;Shirt],Cheff,1000,product-images/shirt.jpg,Shirt slim fit
-Red sports T-shirt,xxxx,[Apparel;T-shirt],Generic,4000,product-images/tshirt2.jpg,Red sports T-shirt 
-Grey sports T-shirt,xxxx,[Apparel;T-shirt],Kipsta,3000,product-images/tshirt.jpg,Grey sports T-shirt 
-Football medium size,xxxx,[Sports],Kipsta,2000,product-images/football.jpg,Football medium size
-Geondute handbag,xxxx,[Handbag;Clutch],Geondute,800,product-images/handbag.jpg,Geondute handbag
-Quechua Water bottle,xxxx,[Household],Quechua,800,product-images/bottle2.jpg,Quechua Water bottle
-Joggers regular size,xxxx,[Apparel;Bottomwear],Generic,2500,product-images/joggers.jpg,Joggers regular size
-Quechua backpack,xxxx,[Storage;Bagpack],Quechua,2000,product-images/backpack3.jpg,Quechua backpack
-Puma shoes unisex,xxxx,[Footwear;Shoes;Sports],Puma,5000,product-images/shoes3.jpg,Puma shoes unisex
-Puma backpack & laptop bag,xxxx,[Storage;Bagpack],Puma,5000,product-images/backpack.jpg,Puma backpack & laptop bag 
+On Cloud X running shoes,xxxx,Footwear;Shoes;Sports,Cloudx,1500,product-images/shoes.jpg,On Cloud X running shoes
+Apple Macbook Pro 13,xxxx,Laptop;Mac,Apple,120000,product-images/laptop.jpg,Apple Macbook Pro 13
+Canon EOS D5 MARK IV,xxxx,Camera;DSLR;SLR,Canon,200000,product-images/camera.jpg,Canon EOS D5 MARK IV
+Apple iPhone Pro 13,xxxx,Phone;Mobile;iPhone,Apple,90000,product-images/mobile.jpg,Apple iPhone Pro 13
+Rolex Green Submarina,xxxx,Watch;Premium;Luxury,Rolex,800000,product-images/watch.jpg,Rolex Green Submarina
+Beats Headphone (Black/Red),xxxx,Headphone;Earphone;Headset,Beats,50000,product-images/headphone.jpg,Beats Headphone (Black/Red)
+Panerai Luminor Ceramica,xxxx,Watch,Luminor,40000,product-images/pam_watch.png,Panerai Luminor Ceramica
+Frank Muller - Cintree Curvex,xxxx,Watch;Premium;Luxury,Frank M,500000,product-images/frank_watch.png,Frank Muller - Cintree Curvex
+Google Pixel 6 Pro (512GB),xxxx,Phone;Mobile;Android,Google,100000,product-images/pixel6pro_mp.png,Google Pixel 6 Pro (512GB)
+Emporio Armani Sneakers,xxxx,Footwear;Shoes;Sports,Armani,40000,product-images/emporio_shoes.png,Emporio Armani Sneakers
+Asics Gel Venture 8 Running,xxxx,Footwear;Shoes;Sports,Asics,1500,product-images/asics_shoes.png,Asics Gel Venture 8 Running
+Beats Studio Buds (RED),xxxx,Headphone;Earphone;Headset,Beats,5500,product-images/beats_hs.jpg,Beats Studio Buds (RED)
+Fujifilm SLR,xxxx,Camera;DSLR;SLR,Fujifilm,100000,product-images/camera2.jpg,Fujifilm SLR
+Watch for her,xxxx,Watch;Premium;Luxury,DKNY,100000,product-images/watch2.jpg,Watch for her
+Women's Handbag,xxxx,Handbag;Clutch,Lino Perros,100000,product-images/handbag2.jpg,Women's Handbag
+Shirt slim fit,xxxx,Apparel;Shirt,Cheff,1000,product-images/shirt.jpg,Shirt slim fit
+Red sports T-shirt,xxxx,Apparel;T-shirt,Generic,4000,product-images/tshirt2.jpg,Red sports T-shirt
+Grey sports T-shirt,xxxx,Apparel;T-shirt,Kipsta,3000,product-images/tshirt.jpg,Grey sports T-shirt
+Football medium size,xxxx,Sports,Kipsta,2000,product-images/football.jpg,Football medium size
+Geondute handbag,xxxx,Handbag;Clutch,Geondute,800,product-images/handbag.jpg,Geondute handbag
+Quechua Water bottle,xxxx,Household,Quechua,800,product-images/bottle2.jpg,Quechua Water bottle
+Joggers regular size,xxxx,Apparel;Bottomwear,Generic,2500,product-images/joggers.jpg,Joggers regular size
+Quechua backpack,xxxx,Storage;Bagpack,Quechua,2000,product-images/backpack3.jpg,Quechua backpack
+Puma shoes unisex,xxxx,Footwear;Shoes;Sports,Puma,5000,product-images/shoes3.jpg,Puma shoes unisex
+Puma backpack & laptop bag,xxxx,Storage;Bagpack,Puma,5000,product-images/backpack.jpg,Puma backpack & laptop bag
