@@ -8,3 +8,8 @@ docker run -p 127.0.0.1:5555:5555 -e REDISHOST=<REDIS_HOST> -e REDISPORT=<REDIS_
 
 
 ![session_search_stability_GCP](https://github.com/user-attachments/assets/d14c5233-7805-48ce-aea3-465debc4c9c1)
+
+
+Application:
+![image](https://github.com/user-attachments/assets/27ea118e-f9f5-4b3e-b833-1854a1baa9b1)
+
