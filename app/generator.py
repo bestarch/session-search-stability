@@ -7,13 +7,14 @@ from connection import RedisConnection
 def load_data():
     conn = RedisConnection().get_connection()
     data = pd.read_csv("data.csv")
+    split_string = lambda s: s.split(";") if s else []
     for i, row in data.iterrows():
         pid = f"ID{i + 1:04d}"
         product = {
             "pid": pid,
             "sku": ''.join(random.choices(string.ascii_uppercase + string.digits, k=7)),
             "name": row['name'],
-            "category": row['category'],
+            "category": split_string(row['category']),
             "brand": row['brand'],
             "price": row['price'],
             "image": row['image'],

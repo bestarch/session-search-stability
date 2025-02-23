@@ -88,7 +88,9 @@ def products():
     search_param = request.args.get("search_param")
     qry = "*"
     if search_param:
-        qry = f"@name:*{search_param}*" + " | @brand:{"+search_param+"}"
+        ## Eg. FT.SEARCH idx_product "@name:*watch* | @description:*watch* | (@category:{watch}) | (@brand:{watch})" LIMIT 0 100
+        qry = (f"@name:*{search_param}* | @description:*{search_param}*"
+               + " | (@category:{"+search_param+"})" + " | (@brand:{"+search_param+"})")
     else:
         search_param = ''
 
@@ -104,6 +106,7 @@ def products():
     """
     req = (aggregations.AggregateRequest(qry)
            .group_by([], reducers.count().alias('product_count')))
+    # E.g. FT.AGGREGATE idx_product "(@category:{watch}) | (@brand:{watch}) | @name:*watch* | @description:*watch*" GROUPBY 0 REDUCE COUNT 0 AS product_count
     res = conn.ft("idx_product").aggregate(req).rows
 
     product_count = 0
@@ -171,11 +174,13 @@ def createIndexes():
         # SCHEMA
         #   $.name as name TEXT
         #   $.description as description TEXT
+        #   $.category.* as category TAG
         #   $.brand as brand TAG
         #   $.price as price NUMERIC SORTABLE
         #   $.sku as sku TEXT
         schema = (TextField("$.name", as_name="name"),
                   TextField("$.description", as_name="description"),
+                  TagField("$.category.*", as_name="category"),
                   TagField("$.brand", as_name="brand"),
                   NumericField("$.price", as_name="price", sortable=True),
                   TextField("$.sku", as_name="sku"))

@@ -219,7 +219,7 @@
                                         <td>
                                             <label class="mt-5" style="font-size: 0.9rem">Category/sub-category:</label></br>
                                             <ul>
-                                                {% for category in product.category.split(';') %}
+                                                {% for category in product.category %}
                                                     <li>{{ category }}</li>
                                                 {% endfor %}
                                             </ul>
